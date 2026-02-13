@@ -3,68 +3,115 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RLA Carrion - Autopeças</title>
+<title>RLA Carrion Autopeças</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #000000, #1a1a1a);
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
     color: white;
     text-align: center;
 }
+
 .container {
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
+
+.logo {
+    width: 320px;
+    max-width: 95%;
+    margin-bottom: 20px;
+    animation: brilho 3s infinite alternate;
+}
+
+@keyframes brilho {
+    from { filter: drop-shadow(0 0 5px red); }
+    to { filter: drop-shadow(0 0 25px orange); }
+}
+
 h1 {
-    color: #ff0000;
-    font-size: 38px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ff2b2b;
+    letter-spacing: 1px;
 }
+
 p {
-    font-size: 18px;
-    margin-bottom: 30px;
+    color: #ccc;
+    margin-bottom: 35px;
 }
+
 .button {
-    display: block;
-    width: 280px;
-    margin: 12px auto;
-    padding: 15px;
-    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 320px;
+    max-width: 95%;
+    margin: 15px auto;
+    padding: 16px;
+    border-radius: 12px;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 16px;
     transition: 0.3s;
 }
+
 .button:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
 }
-.shopee { background: #ff6600; }
-.mercado { background: #ffe600; color: black; }
-.whatsapp { background: #25d366; }
+
+.shopee {
+    background: linear-gradient(45deg, #ff6a00, #ff2b00);
+    color: white;
+}
+
+.mercado {
+    background: #ffe600;
+    color: black;
+}
+
+.whatsapp {
+    background: #25d366;
+    color: white;
+}
+
 .footer {
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
-    color: #999;
-}
-    .logo {
-    width: 150px;
-    margin-bottom: 20px;
+    color: #777;
 }
 </style>
 </head>
+
 <body>
 
 <div class="container">
-    <img src="logo.png" alt="Logo RLA Carrion" class="logo">
-    <h1>RLA CARRION AUTOPEÇAS</h1>
-    <p>Qualidade e confiança em peças automotivas</p>
 
-    <a class="button shopee" href="https://shopee.com.br/rlac1?categoryId=102187&entryPoint=ShopByPDP&itemId=58252956706" target="_blank">Comprar na Shopee</a>
-    <a class="button mercado" href="https://produto.mercadolivre.com.br/MLB-5919322392-lanterna-teto-palio-strada-siena-2004-a-2007-cinza-claro-_JM" target="_blank">Comprar no Mercado Livre</a>
-    <a class="button whatsapp" href="https://wa.me/55011967076777" target="_blank">Falar no WhatsApp</a>
+<img src="logo.png" alt="Logo RLA Carrion" class="logo">
 
-    <div class="footer">
-        © 2026 RLA Carrion - Todos os direitos reservados
-    </div>
+<h1>RLA CARRION AUTOPEÇAS</h1>
+<p>Qualidade e confiança em peças automotivas</p>
+
+<a class="button shopee" href="https://shopee.com.br/rlac1?categoryId=102187&entryPoint=ShopByPDP&itemId=58252956706" target="_blank">
+🛒 Comprar na Shopee
+</a>
+
+<a class="button mercado" href="https://produto.mercadolivre.com.br/MLB-5919322392-lanterna-teto-palio-strada-siena-2004-a-2007-cinza-claro-_JM" target="_blank">
+🟡 Comprar no Mercado Livre
+</a>
+
+<a class="button whatsapp" href="https://wa.me/55011967076777?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações" target="_blank">
+💬 Falar no WhatsApp
+</a>
+
+<div class="footer">
+© 2026 RLA Carrion - Todos os direitos reservados
+</div>
+
 </div>
 
 </body>
